@@ -9,13 +9,14 @@ import { WelcomeComponent } from './welcome/welcome.component';
 @NgModule({
   declarations: [
     AppComponent, 
-    WelcomeComponent, 
+    // WelcomeComponent, 
     // DetailsComponent
   ],
   imports: [
     BrowserModule, 
+    WelcomeComponent
     // SharedModule,
-    DetailsComponent
+    // DetailsComponent
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -25,3 +26,5 @@ export class AppModule {}
 // 345. Building a First Standalone Component
 
 // 346. Standalone Directives & Connecting Building Blocks
+
+// 347. Migrating Another Component
