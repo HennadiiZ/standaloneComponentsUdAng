@@ -2,6 +2,7 @@ import { enableProdMode } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
 // import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppComponent } from './app/app.component';
+import { AnalyticsService } from './app/shared/analytics.service';
 
 // import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
@@ -13,4 +14,8 @@ if (environment.production) {
 // platformBrowserDynamic().bootstrapModule(AppModule)
 //   .catch(err => console.error(err));
 
-bootstrapApplication(AppComponent);
+// bootstrapApplication(AppComponent);
+
+bootstrapApplication(AppComponent, {
+  providers: [AnalyticsService]
+});
