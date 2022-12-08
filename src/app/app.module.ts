@@ -7,9 +7,19 @@ import { DetailsComponent } from './welcome/details/details.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
-  declarations: [AppComponent, WelcomeComponent, DetailsComponent],
-  imports: [BrowserModule, SharedModule],
+  declarations: [
+    AppComponent, 
+    WelcomeComponent, 
+    // DetailsComponent
+  ],
+  imports: [
+    BrowserModule, 
+    // SharedModule,
+    DetailsComponent
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+
+// 345. Building a First Standalone Component
