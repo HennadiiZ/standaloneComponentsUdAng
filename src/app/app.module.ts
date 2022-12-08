@@ -23,3 +23,5 @@ import { WelcomeComponent } from './welcome/welcome.component';
 export class AppModule {}
 
 // 345. Building a First Standalone Component
+
+// 346. Standalone Directives & Connecting Building Blocks
